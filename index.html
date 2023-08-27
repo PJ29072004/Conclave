@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carasouel</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .row{
+            overflow-x: hidden;
+            position: absolute;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.672);
+            background-color: white;
+        }
+        .row:hover{
+            box-shadow: 0 0 30px white;
+        }
+        #C{
+            z-index: 0;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+        #Heading{
+            position: absolute;
+            vertical-align: middle;
+            text-align: center;
+            opacity: 20%;
+            color: white;
+            background-color: black;
+            box-shadow: 0 0 20px rgb(60, 22, 103);
+        }
+        #Heading:hover{
+            opacity: 90%;
+        }
+        #logo{
+            position: absolute;
+            width: 60%;
+            height: 80%;
+            border-radius: 10%;
+            bottom: 0;
+            left: 20%;
+        }
+        .CardDiv{
+            position: absolute;
+            border-radius: 10%;
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(128, 128, 128, 0.213);
+            margin: 10px;
+            top: 0;
+            z-index: 3;
+        }
+        .CardDiv:hover{
+            box-shadow: 0 0 20px white;
+        }
+        #B{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            overflow-x: scroll;
+            vertical-align: middle;
+        }
+        #Speakers{
+            position: absolute;
+            color: white;
+            left: 0;
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="C"></div>
+    <div id="B"></div>
+    <h1 id="Speakers"></h1>
+    <div id="Heading">
+        CONCLAVE
+        <img src="mascot_homepage.png" id="logo">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
